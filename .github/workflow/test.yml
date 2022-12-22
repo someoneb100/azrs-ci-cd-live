@@ -1,0 +1,18 @@
+name: test
+
+on:
+    push:
+        branches: [ main ]
+
+jobs:
+    test1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo1
+              run: echo "Hello World!"
+
+    test2:
+        runs-on: ubuntu-latest
+        steps:
+          - name: echo2
+            run: echo "Zdravo Svete!"
